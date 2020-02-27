@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EmployeeService {
 
-  private _url:string = "/assets/data/employees.json";
+  private _url:string = "http://localhost:8080/getMyEmployees";
   constructor( private http:HttpClient) { }
 
   public getEmployees():Observable<IEmployee[]>{
